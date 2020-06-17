@@ -1,0 +1,7 @@
+KOFI MEIGHAN
+KM3547
+PROGRAMMING PROJECT 5
+
+Talk.java - My talk class has 3 instance variables: speaker, startTime, and endTime. my talk class implements comparable, and within my compareTo() method I compared my talks based on their end times. in addition to my getStartTime() and getEndTime() accessor methods, I included another method called formatTime() to assist my toString() method. formatTime() simply formats the time into a readable format.
+
+Scheduler.java - In my scheduler class, my makeTalks method begins by opening the file provided in the argument line for the tester and reads each line separately. I create an array of strings with each element from the file. Within my while loop that reads the file, I check each start time and end time before I instantiate a Talk object. If it has an incorrect format, I throw an IOException and terminate my code. If not, I instantiate a new Talk object and add it to the array list that will be returned by the method. Lastly, my scheduleTalks() method sorts the array list parameter that is passed through the method when it is called, and adds the first element in the list to the actual schedule. To determine the schedule, I enter an enhanced for loop that checks if the net element's start time is after the last element in the actual schedule's end time, and if so I add it to the schedule. I include an index out of bounds exception for when there is a problem reading the file in my previous method and an empty array is passed into the scheduleTalks() method. 
