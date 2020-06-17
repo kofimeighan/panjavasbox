@@ -1,0 +1,1 @@
+Welcome! I am Kofi Meighan and this is a collection of all of my problem sets and programming projects completed in my Intro To Java (COMS 1004) class during the Spring 2020 semester.
